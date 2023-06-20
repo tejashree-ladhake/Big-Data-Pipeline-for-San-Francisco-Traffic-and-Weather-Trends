@@ -4,7 +4,7 @@ yesterday = date.today() - timedelta(days=1)
 two_days_ago = date.today() - timedelta(days=2)
 three_days_ago = date.today() - timedelta(days=3) 
 
-data_dir = "/Users/tejashree/Desktop/USF/Distributed Data Systems/2023-msds697-distributed-data-systems/Day1/Example1/data"
+data_dir = "~/data"
 
 sf_data_url = "data.sfgov.org"
 data_limit = 200000

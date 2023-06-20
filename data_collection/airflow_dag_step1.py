@@ -51,6 +51,7 @@ def download_sf_law_enforcement_data(**kwargs):
 
 with DAG(dag_id="download_data_step1",
          start_date=datetime(2023, 1, 14),
+         catchup = True,
          schedule_interval='@daily') as dag:
 
     # https://github.com/apache/airflow/discussions/24463

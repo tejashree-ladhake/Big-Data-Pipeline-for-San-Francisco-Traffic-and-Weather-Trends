@@ -94,6 +94,7 @@ def download_sf_weather_data(**kwargs):
 
 with DAG(dag_id="download_data_step2",
          start_date=datetime(2023, 1, 14),
+         catchup = True,
          schedule_interval='@daily') as dag:
 
     # https://github.com/apache/airflow/discussions/24463
